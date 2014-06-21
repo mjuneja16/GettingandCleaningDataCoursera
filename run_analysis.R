@@ -54,4 +54,4 @@ subject<-rbind(subject_train,subject_test)
 ##with the average of each variable for each activity and each subject.
 averages <- aggregate(X, by = list(activity = Y[,2], subject = subject[,1]),FUN="mean")
 ##writing the contents of the data set 'averages' to the text file 'avareges.txt'
-write.table(averages, file="./UCI HAR Dataset/averages.txt",row.names=FALSE,sep=",")
+write.table(averages, file="./UCI HAR Dataset/output.txt",row.names=FALSE,sep=",")
