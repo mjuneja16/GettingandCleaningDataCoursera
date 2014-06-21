@@ -53,5 +53,5 @@ subject<-rbind(subject_train,subject_test)
 ##5. Creating a second, independent tidy data set 'averages' 
 ##with the average of each variable for each activity and each subject.
 averages <- aggregate(X, by = list(activity = Y[,2], subject = subject[,1]),FUN="mean")
-##writing the contents of the data set 'averages' to the text file 'avareges.txt'
+##writing the contents of the data set 'averages' to the text file 'output.txt'
 write.table(averages, file="./UCI HAR Dataset/output.txt",row.names=FALSE,sep=",")
