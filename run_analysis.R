@@ -40,7 +40,10 @@ for(i in 1:nrow(Y))
 }
 
 ##4. labelling 'mean_and_std' data set with descriptive variable names to create new data set 'mean_and_std_labels'
-mean_and_std_labels<-cbind(activity=Y[,2],mean_and_std)
+colnames(mean_and_std) <- gsub("Acc","Acceleration",colnames(mean_and_std))
+colnames(mean_and_std) <- gsub("Gyro","Gyroscope",colnames(mean_and_std))
+colnames(mean_and_std) <- gsub("[()]","",colnames(mean_and_std))
+colnames(mean_and_std) <- gsub("Mag","Magnitude",colnames(mean_and_std))
 
 ##reading the contents of the text file into the data frame 'subject_train'
 subject_train<-read.table("./UCI HAR Dataset/train/subject_train.txt",col.names=c("subject"))
