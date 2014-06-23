@@ -33,16 +33,14 @@ for(i in 1:nrow(Y))
   for(j in 1:nrow(activity_labels))
   {
     if(Y$activity.id[i]==activity_labels[j,1])
-      {
-          Y$activity.name[i]<-as.character(activity_labels[j,2])
-      }
+    {
+      Y$activity.name[i]<-as.character(activity_labels[j,2])
+    }
   }
 }
 
-##4. labelling the 'X' and 'mean_and_std' data sets with descriptive variable names 
-##to create new data sets 'X_labels' and 'mean_and_std_labels' respectively.
-X_labels<-cbind(Y,X)
-mean_and_std_labels<-cbind(Y,mean_and_std)
+##4. labelling 'mean_and_std' data set with descriptive variable names to create new data set 'mean_and_std_labels'
+mean_and_std_labels<-cbind(activity=Y[,2],mean_and_std)
 
 ##reading the contents of the text file into the data frame 'subject_train'
 subject_train<-read.table("./UCI HAR Dataset/train/subject_train.txt",col.names=c("subject"))
@@ -52,6 +50,6 @@ subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt",col.names=c("
 subject<-rbind(subject_train,subject_test)
 ##5. Creating a second, independent tidy data set 'averages' 
 ##with the average of each variable for each activity and each subject.
-averages <- aggregate(X, by = list(activity = Y[,2], subject = subject[,1]),FUN="mean")
+averages <- aggregate(mean_and_std, by = list(activity = Y[,2], subject = subject[,1]),FUN="mean")
 ##writing the contents of the data set 'averages' to the text file 'output.txt'
 write.table(averages, file="./UCI HAR Dataset/output.txt",row.names=FALSE,sep=",")
