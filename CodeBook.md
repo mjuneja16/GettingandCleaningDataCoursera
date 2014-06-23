@@ -111,6 +111,4 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 | fbodybodygyrojerkmag.mean | Mean frequency of magnitude of body gyroscope jerk measurement
 | fbodybodygyrojerkmag.std | Standard deviation frequency of magnitude of body gyroscope jerk measurement
 | activity | The activity performed
-| activity.id | Activity ID
-| activity.name | Decriptive activity name
 | subject | Subject ID
