@@ -7,15 +7,17 @@ unzip("getdata_projectfiles.zip")
 ##reading the contents of the text file into the data frame 'features'
 features<-read.table("./UCI HAR Dataset/features.txt")
 ##reading the contents of the text file into the data frame 'X_train'
-X_train<-read.table("./UCI HAR Dataset/train/X_train.txt",col.names=features[,2])
+X_train<-read.table("./UCI HAR Dataset/train/X_train.txt")
+colnames(X_train)<-features[,c("V2")]
 ##reading the contents of the text file into the data frame 'X_test'
-X_test<-read.table("./UCI HAR Dataset/test/X_test.txt",col.names=features[,2])
+X_test<-read.table("./UCI HAR Dataset/test/X_test.txt")
+colnames(X_test)<-features[,c("V2")]
 ##1. merging the test and train data sets to create a new data set 'X'
 X<-rbind(X_train,X_test)
 
 ##2. extracting only the measurements on mean and standard deviation for each measurement 
 ##to create a new data set 'mean_and_std'.
-required_feat<-features[grep("(mean|std)\\(",features[,2]),]
+required_feat<-features[grep("std()|mean\\(\\)",features[,2]),]
 mean_and_std<-X[,required_feat[,1]]
 
 ##reading the contents of the text file into the data frame 'activity labels'
