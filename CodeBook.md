@@ -44,40 +44,40 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 | Variable | Description
 -----------|-------------
-| tbodyacc.mean.x | Mean time for acceleration of body for X direction
-| tbodyacc.mean.y | Mean time for acceleration of body for Y direction
-| tbodyacc.mean.z | Mean time for acceleration of body for Z direction
-| tbodyacc.std.x | Standard deviation of time for acceleration of body for X direction
-| tbodyacc.std.y | Standard deviation of time for acceleration of body for Y direction
-| tbodyacc.std.z | Standard deviation of time for acceleration of body for Z direction
-| tgravityacc.mean.x | Mean time of acceleration of gravity for X direction
-| tgravityacc.mean.y | Mean time of acceleration of gravity for Y direction
-| tgravityacc.mean.z | Mean time of acceleration of gravity for Z direction
-| tgravityacc.std.x | Standard deviation of time of acceleration of gravity for X direction
-| tgravityacc.std.y | Standard deviation of time of acceleration of gravity for Y direction
-| tgravityacc.std.z | Standard deviation of time of acceleration of gravity for Z direction
-| tbodyaccjerk.mean.x | Mean time of body acceleration jerk for X direction
-| tbodyaccjerk.mean.y | Mean time of body acceleration jerk for Y direction
-| tbodyaccjerk.mean.z | Mean time of body acceleration jerk for Z direction
-| tbodyaccjerk.std.x | Standard deviation of time of body acceleration jerk for X direction
-| tbodyaccjerk.std.y | Standard deviation of time of body acceleration jerk for Y direction
-| tbodyaccjerk.std.z | Standard deviation of time of body acceleration jerk for Z direction
-| tbodygyro.mean.x | Mean body gyroscope measurement for X direction
-| tbodygyro.mean.y | Mean body gyroscope measurement for Y direction
-| tbodygyro.mean.z | Mean body gyroscope measurement for Z direction
-| tbodygyro.std.x | Standard deviation of body gyroscope measurement for X direction
-| tbodygyro.std.y | Standard deviation of body gyroscope measurement for Y direction
-| tbodygyro.std.z | Standard deviation of body gyroscope measurement for Z direction
-| tbodygyrojerk.mean.x | Mean jerk signal of body for X direction
-| tbodygyrojerk.mean.y | Mean jerk signal of body for Y direction
-| tbodygyrojerk.mean.z | Mean jerk signal of body for Z direction
-| tbodygyrojerk.std.x | Standard deviation of jerk signal of body for X direction
-| tbodygyrojerk.std.y | Standard deviation of jerk signal of body for Y direction
-| tbodygyrojerk.std.z | Standard deviation of jerk signal of body for Z direction
-| tbodyaccmag.mean | Mean magnitude of body Acc
-| tbodyaccmag.std | Standard deviation of magnitude of body Acc
-| tgravityaccmag.mean | Mean gravity acceleration magnitude
-| tgravityaccmag.std | Standard deviation of gravity acceleration magnitude
+| tBodyAcceleration.mean.x | Mean time for acceleration of body for X direction
+| tBodyAcceleration.mean.y | Mean time for acceleration of body for Y direction
+| tBodyAcceleration.mean.z | Mean time for acceleration of body for Z direction
+| tBodyAcceleration.std.x | Standard deviation of time for acceleration of body for X direction
+| tBodyAcceleration.std.y | Standard deviation of time for acceleration of body for Y direction
+| tBodyAcceleration.std.z | Standard deviation of time for acceleration of body for Z direction
+| tGravityAcceleration.mean.x | Mean time of acceleration of gravity for X direction
+| tGravityAcceleration.mean.y | Mean time of acceleration of gravity for Y direction
+| tGravityAcceleration.mean.z | Mean time of acceleration of gravity for Z direction
+| tGravityAcceleration.std.x | Standard deviation of time of acceleration of gravity for X direction
+| tGravityAcceleration.std.y | Standard deviation of time of acceleration of gravity for Y direction
+| tGravityAcceleration.std.z | Standard deviation of time of acceleration of gravity for Z direction
+| tBodyAccelerationJerk.mean.x | Mean time of body acceleration jerk for X direction
+| tBodyAccelerationJerk.mean.y | Mean time of body acceleration jerk for Y direction
+| tBodyAccelerationJerk.mean.z | Mean time of body acceleration jerk for Z direction
+| tBodyAccelerationJerk.std.x | Standard deviation of time of body acceleration jerk for X direction
+| tBodyAccelerationJerk.std.y | Standard deviation of time of body acceleration jerk for Y direction
+| tBodyAccelerationJerk.std.z | Standard deviation of time of body acceleration jerk for Z direction
+| tBodyGyroscope.mean.x | Mean body gyroscope measurement for X direction
+| tBodyGyroscope.mean.y | Mean body gyroscope measurement for Y direction
+| tBodyGyroscope.mean.z | Mean body gyroscope measurement for Z direction
+| tBodyGyroscope.std.x | Standard deviation of body gyroscope measurement for X direction
+| tBodyGyroscope.std.y | Standard deviation of body gyroscope measurement for Y direction
+| tBodyGyroscope.std.z | Standard deviation of body gyroscope measurement for Z direction
+| tBodyGyroscopeJerk.mean.x | Mean jerk signal of body for X direction
+| tBodyGyroscopeJerk.mean.y | Mean jerk signal of body for Y direction
+| tBodyGyroscopeJerk.mean.z | Mean jerk signal of body for Z direction
+| tBodyGyroscopeJerk.std.x | Standard deviation of jerk signal of body for X direction
+| tBodyGyroscopeJerk.std.y | Standard deviation of jerk signal of body for Y direction
+| tBodyGyroscopeJerk.std.z | Standard deviation of jerk signal of body for Z direction
+| tBodyAccelerationMagnitude.mean | Mean magnitude of body acceleration
+| tBodyAccelerationMagnitude.std | Standard deviation of magnitude of body acceleration
+| tGravityAccelerationMagnitude.mean | Mean gravity acceleration magnitude
+| tGravityAccelerationMagnitude.std | Standard deviation of gravity acceleration magnitude
 | tbodyaccjerkmag.mean | Mean magnitude of body acceleration jerk
 | tbodyaccjerkmag.std | Standard deviation of magnitude of body acceleration jerk
 | tbodygyromag.mean | Mean magnitude of body gyroscope measurement
